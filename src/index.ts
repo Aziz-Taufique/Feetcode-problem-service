@@ -4,8 +4,8 @@ import serverConfig from "./config/serverConfig";
 
 const app = express();
 
-app.get("/", (req, res) => {
-    res.end("hello");
+app.get("/ping", (req, res) => {
+    return res.send({ message: "Server is alive" });
 });
 
 
